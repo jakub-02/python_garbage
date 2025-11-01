@@ -1,0 +1,12 @@
+Zadanie vypracujete každý sám. Úlohou je vytvoriť algoritmus pre segmentáciu obrázku na základe textúry.
+Každý si zvoľte vlastný postup - je na vás aký ale nie na princípe strojového učenia.
+Clustering algoritmus môžete používať, ako aj všetky metódy používané na cvičeniach. D
+ávame vám k dispozícií 10 obrázkov spolu s ground truth, na ktorých si fungovanie svojho algoritmu môžete nastaviť: textury_train.zip.
+Tieto obrázky boli vytvorené na https://mosaic.utia.cas.cz/.
+Body za zápočet sa budú skladať z dvoch častí: 0 až 10b dostanete na základe úspešnosti vášho algoritmu, podľa MS - mapping score, viď. https://mosaic.utia.cas.cz/20criteria2.html. Zoradíme vás od najlepšieho po najhoršieho, najlepší dostane 10b, najhorší 0b a ostatní rovnomerne podľa svojej úspešnosti. 0 až 30b môžete dostať za obhajobu svojho zadania, kde budete musieť vysvetliť, ako váš algoritmus funguje a odpovedať na otázky.
+Odovzdávate kód, ktorý prečíta zložku data v lokálnom priečinku a nájde všetky súbory. Tieto súbory sa budú volať tm1_1_1.png až tm20_1_1.png
+Váš kód by mal postupne zobrať tieto obrázky a odsegmentoval textúry podľa vašich metód.
+Výsledný obrázok by sa mal podobať na obrázky ground truth, ktoré ste dostali. Každá textúra by mala mať unikátnu hodnotu, čiže výsledný obrázok by mal byť tvorený label hodnotami pre každý pixel. Čiže všetky pixeli textúry s indexom 0 by mali mať hodnotu 0, pre textúru 1 by mali mať hodnotu 1 atď.
+Pri algoritme nezáleží, ktorá textúra je ktorá, hlavné je aby pixeli z rovnakej textúry mali rovnaké hodnoty v rámci jedného obrázka. Taktiež nezáleží aby rovnaké textúry z viacerých obrázkov mali rovnaké indexy.
+Výsledné obrázky váš kód uloží do priečinku output, kde ich uložíte ako seg1_1_1.png až seg20_1_1.png  , čiže prepíšete tm na seg a zvyšok necháte tak.
+Po odovzdaní bude prebiehať obhajoba kódu počas 12. a 13. týždňa hlavne v čase cvičení. Ich formát bude, že podľa času odovzdania vám pridelíme sloty v čase vášho cvičenia a v tom slote dôjdete na UVT, kde sa vás budeme pýtať otázky ohľadne kódu
