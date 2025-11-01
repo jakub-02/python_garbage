@@ -22,10 +22,10 @@ priecinok pre projekt z predmetu zaklady cloudovych technologií
 ### /POCVID
 priecinok pre kody z cvik a kody pre projekt z predmetu pocitacove vidanie
 
-## /NN
+### /NN
 priecinok pre kody z predmetu neuronove siete
 
-## /UI
+### /UI
 priecinok pre kody z predmetu umela inteligencia
 
 ### /others
